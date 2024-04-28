@@ -28,7 +28,7 @@ public class Main {
             if(S.substring(i,i+1).equals(E.substring(i,i+1))){
                 count++;
                 if(count > 4) return false;
-                if(count == 4 && S.substring(i+1,i+2).equals("-")){
+                if(count == 4 && (i + 1 < N) && S.substring(i+1,i+2).equals("-")){
                     return false;
                 }
             }
